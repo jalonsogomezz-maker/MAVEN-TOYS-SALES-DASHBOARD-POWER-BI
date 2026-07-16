@@ -85,8 +85,9 @@ Entre las principales visualizaciones destacan un mapa con la distribución de l
 Con este dashboard se responde a preguntas relacionadas con la distribución geográfica de la empresa, la facturación por ciudad, las tiendas con mejor rendimiento y aquellas ubicaciones que generan un mayor beneficio.
 
 ## Dashboard de Tiendas
+
 <p align="center">
-  <img src="Images/Dashboard_Tiendas.png" width="900">
+  <img src="Images/Dashboard_tiendas.png" width="900">
 </p>
 
 ## 5. Elaboración de conclusiones y recomendaciones
