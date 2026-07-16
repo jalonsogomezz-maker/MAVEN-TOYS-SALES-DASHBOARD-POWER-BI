@@ -18,11 +18,11 @@ Las principales preguntas de negocio son:
 Estas son las principales cuestiones que se pretenden resolver, aunque durante el desarrollo del proyecto surgieron otras preguntas que también fueron analizadas.
 
 # Metodología
-1.Importación y validación de archivos CSV.
-2.Modelado de datos.
-3.Creación de medidas DAX.
-4.Creación del dashboard.
-5.Elaboración de conclusiones y recomendaciones.
+1. Importación y validación de archivos CSV.
+2. Modelado de datos.
+3. Creación de medidas DAX.
+4. Creación del dashboard.
+5. Elaboración de conclusiones y recomendaciones.
 
 ## 1. Importación y validación de datos
 En este caso los datos podrían haberse importado directamente desde SQL, ya que el proceso de limpieza y validación ya había sido realizado previamente. Sin embargo, preferí hacerlo desde archivos CSV para seguir practicando el proceso de limpieza y transformación de datos mediante Power Query.
