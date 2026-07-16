@@ -61,6 +61,11 @@ La estructura es la misma para los tres grupos, trabajando siempre a mes vencido
 Los resultados obtenidos pueden compararse con el mes anterior y con el mismo mes del año anterior, permitiendo calcular indicadores como la evolución mensual (MoM), la evolución interanual (YoY) y observar la tendencia de los últimos doce meses.
 Con este dashboard se responde principalmente a preguntas relacionadas con la evolución de los ingresos, la rentabilidad del negocio y su comportamiento a lo largo del tiempo.
 
+## Dashboard de Ventas
+<p align="center">
+  <img src="Images/Dashboard_ventas.png" width="900">
+</p>
+
 ## Dashboard de Productos
 El segundo dashboard analiza la empresa desde la perspectiva de los productos que comercializa.
 Los principales objetivos de esta página son mostrar los productos con mayor facturación, analizar la distribución de los ingresos por categorías y detectar aquellos productos con mayor presión sobre el inventario.
@@ -68,11 +73,21 @@ Este dashboard pasa a ser analítico, permitiendo al usuario interactuar mediant
 Uno de los indicadores más interesantes desarrollados es el Índice de Presión sobre el Stock. Este indicador se creó debido a que el dataset no dispone de información sobre las reposiciones de inventario. Para ello se relacionan las unidades vendidas con el stock disponible, obteniendo un ratio que permite identificar aquellos productos que presentan una mayor presión sobre su inventario y, por tanto, una mayor prioridad de reposición.
 Un ejemplo es el producto Colorbuds, que presenta un índice de 90,05, lo que significa que durante todo el periodo analizado se han vendido aproximadamente 90 veces las unidades que actualmente permanecen en stock. Esto indica una elevada presión sobre el inventario y la necesidad de revisar su reposición.
 
+## Dashboard de Productos
+<p align="center">
+  <img src="Images/Dashboard_Productos.png" width="900">
+</p>
+
 ## Dashboard de Tiendas
 El último dashboard analiza la empresa desde la perspectiva de sus tiendas, mostrando cómo se distribuyen geográficamente, qué zonas abarcan y cuál es el rendimiento de cada una de ellas.
 Al igual que el dashboard de Productos, se trata de un dashboard analítico donde el usuario puede interactuar mediante filtros de Fecha y Zona Geográfica.
 Entre las principales visualizaciones destacan un mapa con la distribución de las tiendas, un análisis de las ciudades con mayor facturación y un gráfico comparativo entre las mejores tiendas según sus ingresos y beneficios.
 Con este dashboard se responde a preguntas relacionadas con la distribución geográfica de la empresa, la facturación por ciudad, las tiendas con mejor rendimiento y aquellas ubicaciones que generan un mayor beneficio.
+
+## Dashboard de Tiendas
+<p align="center">
+  <img src="Images/Dashboard_Tiendas.png" width="900">
+</p>
 
 ## 5. Elaboración de conclusiones y recomendaciones
 
