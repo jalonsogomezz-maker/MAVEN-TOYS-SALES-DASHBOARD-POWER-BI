@@ -1,20 +1,21 @@
 # MAVEN TOYS SALES DASHBOARD | POWER BI
 
 # Descripción del Proyecto
-Con este proyecto he tratado de mejorar el mismo análisis realizado previamente con SQL y Excel, dando una mejor legibilidad a los resultados obtenidos mediante Power BI y el uso de medidas DAX.
-El proyecto consiste en la creación de dashboards analíticos sobre una empresa juguetera distribuida por México. Los datos analizados son históricos y ficticios. A partir de ellos se han desarrollado diferentes medidas DAX para obtener información relevante y construir los principales KPIs del negocio.
+Con este proyecto he tratado de mejorar el mismo análisis realizado previamente con SQL y Excel, dando una mejor legibilidad a los resultados obtenidos mediante Power BI y el uso de medidas DAX. 
+Los datos analizados son históricos y ficticios. El periodo analizado es: Enero 2022 - Septiembre 2023. 
+El proyecto consiste en la creación de dashboards analíticos sobre una empresa juguetera distribuida por México. el proyecto se realizará con el uso de diferentes medidas DAX para obtener información relevante y construir los principales KPIs del negocio.
 La metodología seguida analiza la empresa desde tres perspectivas: Ventas, Productos y Tiendas. Cada página está diseñada para responder diferentes preguntas de negocio que se plantean a continuación.
 
 # Objetivos del estudio
 Los objetivos estudiados van de la mano del proyecto realizado previamente en SQL y Excel, ya que se trata del mismo caso práctico desarrollado con una herramienta diferente.
 Las principales preguntas de negocio son:
 
-¿Cómo evolucionan los ingresos a lo largo del tiempo?
-¿Qué categorías generan más ingresos?
-¿Qué productos son los más rentables?
-¿Qué ciudades generan mayor facturación?
-¿Qué productos presentan mayor riesgo de rotura de stock?
-¿Cuál es el margen de beneficio del negocio?
+-¿Cómo evolucionan los ingresos a lo largo del tiempo?
+-¿Qué categorías generan más ingresos?
+-¿Qué productos son los más rentables?
+-¿Qué ciudades generan mayor facturación?
+-¿Qué productos presentan mayor riesgo de rotura de stock?
+-¿Cuál es el margen de beneficio del negocio?
 Estas son las principales cuestiones que se pretenden resolver, aunque durante el desarrollo del proyecto surgieron otras preguntas que también fueron analizadas.
 
 # Metodología
@@ -28,10 +29,8 @@ Estas son las principales cuestiones que se pretenden resolver, aunque durante e
 En este caso los datos podrían haberse importado directamente desde SQL, ya que el proceso de limpieza y validación ya había sido realizado previamente. Sin embargo, preferí hacerlo desde archivos CSV para seguir practicando el proceso de limpieza y transformación de datos mediante Power Query.
 
 ## 2. Modelado de datos
-Una vez importados y validados los datos, procedí a plantear el modelo de datos creando dos tablas de hechos que estarán relacionadas con tres tablas de dimensiones. De esta manera se crea un modelo en estrella. En la siguiente imagen podréis ver como estructure las relaciones y la dirección de las mismas.
+Una vez importados y validados los datos, procedí a plantear el modelo de datos creando dos tablas de hechos relacionadas con tres tablas de dimensiones. De esta manera se crea un modelo en estrella. En la siguiente imagen podréis ver como estructure las relaciones y la dirección de las mismas.
 Posteriormente creé una tabla de fechas que sirve como dimensión temporal para poder relacionar correctamente las diferentes tablas y realizar análisis temporales mediante DAX.
-## Modelo de datos
-
 <p align="center">
   <img src="Images/Modelado%20de%20datos.png" width="900">
 </p>
@@ -50,18 +49,16 @@ Número de Ventas Último Mes
 Todas las medidas fueron desarrolladas manualmente mediante DAX, sin utilizar cálculos automáticos.
 
 ## 4. Creación del Dashboard
-
-El análisis realizado se divide en tres dashboards diferentes: Ventas, Productos y Tiendas, donde cada uno responde a diferentes preguntas de negocio según el ámbito analizado.
+El proyecto consiste en la creación de un dashboard ejecutivo que será el de Ventas y dos dashboards analíticos productos y tiendas.
+Cada uno de los dashboard responde a diferentes preguntas de negocio según el ámbito analizado.
 
 Dashboard de Ventas
 ## Dashboard de Ventas
-Se trata de un dashboard ejecutivo enfocado al análisis de las ventas de la empresa. Es un dashboard ejecutivo puesto que el usuario no puede interactuar con los gráficos ni los datos. Se hizo así con el objetivo de ofrecer una visión estable y comparable del negocio.
+Se trata de un dashboard ejecutivo enfocado al análisis de las ventas de la empresa. Es un dashboard ejecutivo puesto que el usuario no puede interactuar con los gráficos ni los filtros. Se hizo así con el objetivo de ofrecer una visión estable y comparable del negocio.
 Este Dashboard abarca preguntas de negocio que afectan a tres grupos, estos grupos son: la facturación, el margen de beneficio y el numero de ventas.
 La estructura es la misma para los tres grupos, trabajando siempre a mes vencido. De esta forma se evitan meses incompletos que puedan dar lugar a interpretaciones erróneas.
 Los resultados obtenidos pueden compararse con el mes anterior y con el mismo mes del año anterior, permitiendo calcular indicadores como la evolución mensual (MoM), la evolución interanual (YoY) y observar la tendencia de los últimos doce meses.
 Con este dashboard se responde principalmente a preguntas relacionadas con la evolución de los ingresos, la rentabilidad del negocio y su comportamiento a lo largo del tiempo.
-
-## Dashboard de Ventas
 <p align="center">
   <img src="Images/Dashboard_ventas.png" width="900">
 </p>
@@ -73,7 +70,6 @@ Este dashboard pasa a ser analítico, permitiendo al usuario interactuar mediant
 Uno de los indicadores más interesantes desarrollados es el Índice de Presión sobre el Stock. Este indicador se creó debido a que el dataset no dispone de información sobre las reposiciones de inventario. Para ello se relacionan las unidades vendidas con el stock disponible, obteniendo un ratio que permite identificar aquellos productos que presentan una mayor presión sobre su inventario y, por tanto, una mayor prioridad de reposición.
 Un ejemplo es el producto Colorbuds, que presenta un índice de 90,05, lo que significa que durante todo el periodo analizado se han vendido aproximadamente 90 veces las unidades que actualmente permanecen en stock. Esto indica una elevada presión sobre el inventario y la necesidad de revisar su reposición.
 
-## Dashboard de Productos
 <p align="center">
   <img src="Images/Dashboard_Productos.png" width="900">
 </p>
@@ -83,8 +79,6 @@ El último dashboard analiza la empresa desde la perspectiva de sus tiendas, mos
 Al igual que el dashboard de Productos, se trata de un dashboard analítico donde el usuario puede interactuar mediante filtros de Fecha y Zona Geográfica.
 Entre las principales visualizaciones destacan un mapa con la distribución de las tiendas, un análisis de las ciudades con mayor facturación y un gráfico comparativo entre las mejores tiendas según sus ingresos y beneficios.
 Con este dashboard se responde a preguntas relacionadas con la distribución geográfica de la empresa, la facturación por ciudad, las tiendas con mejor rendimiento y aquellas ubicaciones que generan un mayor beneficio.
-
-## Dashboard de Tiendas
 
 <p align="center">
   <img src="Images/Dashboard_tiendas.png" width="900">
@@ -107,8 +101,13 @@ Con este dashboard se responde a preguntas relacionadas con la distribución geo
 - Estudiar la disminución del margen de beneficio observada en la comparación interanual (YoY), identificando las posibles causas y analizando qué medidas podrían adoptarse para incrementar la rentabilidad del negocio.
 
 - Priorizar la reposición de stock de los productos **Action Figure** y **Colorbuds** para reducir el riesgo de rotura de stock y evitar el posible impacto sobre las ventas.
+- Tratar de potenciar el resto de categorías de productos para reducir la dependencia de la categoría Toys, que actualmente representa más de un tercio de la facturación.
+## Tecnologías utilizadas
 
-- Tratar de mejorar el resto de categoría de productos con el objetivo de evitar que gran parte de la facturación del negocio (más de 1/3) dependa de la categoria **Toys**.
+- Power BI Desktop
+- Power Query
+- DAX
+- Microsoft Excel (CSV)
 
 
 
