@@ -10,12 +10,12 @@ La metodología seguida analiza la empresa desde tres perspectivas: Ventas, Prod
 Los objetivos estudiados van de la mano del proyecto realizado previamente en SQL y Excel, ya que se trata del mismo caso práctico desarrollado con una herramienta diferente.
 Las principales preguntas de negocio son:
 
--¿Cómo evolucionan los ingresos a lo largo del tiempo?
--¿Qué categorías generan más ingresos?
--¿Qué productos son los más rentables?
--¿Qué ciudades generan mayor facturación?
--¿Qué productos presentan mayor riesgo de rotura de stock?
--¿Cuál es el margen de beneficio del negocio?
+- ¿Cómo evolucionan los ingresos a lo largo del tiempo?
+- ¿Qué categorías generan más ingresos?
+- ¿Qué productos son los más rentables?
+- ¿Qué ciudades generan mayor facturación?
+- ¿Qué productos presentan mayor riesgo de rotura de stock?
+- ¿Cuál es el margen de beneficio del negocio?
 Estas son las principales cuestiones que se pretenden resolver, aunque durante el desarrollo del proyecto surgieron otras preguntas que también fueron analizadas.
 
 # Metodología
@@ -77,7 +77,7 @@ Un ejemplo es el producto Colorbuds, que presenta un índice de 90,05, lo que si
 ## Dashboard de Tiendas
 El último dashboard analiza la empresa desde la perspectiva de sus tiendas, mostrando cómo se distribuyen geográficamente, qué zonas abarcan y cuál es el rendimiento de cada una de ellas.
 Al igual que el dashboard de Productos, se trata de un dashboard analítico donde el usuario puede interactuar mediante filtros de Fecha y Zona Geográfica.
-Entre las principales visualizaciones destacan un mapa con la distribución de las tiendas, un análisis de las ciudades con mayor facturación y un gráfico comparativo entre las mejores tiendas según sus ingresos y beneficios.
+Los gráficos desarrollados en esta pagina son un mapa con la distribución de las tiendas, un análisis de las ciudades con mayor facturación y un gráfico comparativo entre las mejores tiendas según sus ingresos y beneficios.
 Con este dashboard se responde a preguntas relacionadas con la distribución geográfica de la empresa, la facturación por ciudad, las tiendas con mejor rendimiento y aquellas ubicaciones que generan un mayor beneficio.
 
 <p align="center">
