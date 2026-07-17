@@ -34,8 +34,9 @@ En este caso los datos podrían haberse importado directamente desde SQL, ya que
 ## 2. Modelado de datos
 Una vez importados y validados los datos, procedí a plantear el modelo de datos creando dos tablas de hechos relacionadas con tres tablas de dimensiones. De esta manera se crea un modelo en estrella. En la siguiente imagen podréis ver como estructure las relaciones y la dirección de las mismas.
 Posteriormente creé una tabla de fechas que sirve como dimensión temporal para poder relacionar correctamente las diferentes tablas y realizar análisis temporales mediante DAX.
+
 <p align="center">
-  <img src="Images/Modelado%20de%20datos.png" width="900">
+  <img src="Images/Modelado_de_datos.png" width="900">
 </p>
 
 ## 3. Creación de medidas DAX
