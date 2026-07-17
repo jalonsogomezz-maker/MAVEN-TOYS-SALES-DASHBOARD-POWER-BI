@@ -1,5 +1,7 @@
 # MAVEN TOYS SALES DASHBOARD | POWER BI
-
+<p align="center">
+  <img src="Images/Dashboard_Overview.png" width="1000">
+</p>
 # Descripción del Proyecto
 Con este proyecto he tratado de mejorar el mismo análisis realizado previamente con SQL y Excel, dando una mejor legibilidad a los resultados obtenidos mediante Power BI y el uso de medidas DAX. 
 Los datos analizados son históricos y ficticios. El periodo analizado es: Enero 2022 - Septiembre 2023. 
